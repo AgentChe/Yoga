@@ -1,0 +1,187 @@
+/* 
+  Localizable.strings
+  Soccer
+
+  Created by Андрей Чернышев on 01.02.2023.
+  
+*/
+
+// MARK: General
+"Cancel" = "Cancel";
+"Continue" = "Continue";
+"Next" = "Next";
+
+// MARK: ImagePicker
+"ImagePicker.TakePhoto" = "Take a photo";
+"ImagePicker.CameraRoll" = "Camera roll";
+"ImagePicker.PhotoLibrary" = "Photo library";
+
+// MARK: TryAgain
+"TryAgain.Title" = "The app failed to perform a request";
+"TryAgain.SubTitle" = "If there’s a connection issue on your side try one more time. If the connection is fine and the error keeps on repeating please get in touch with the support";
+"TryAgain.Button" = "Try again";
+"TryAgain.Contact" = "Contact the support";
+
+// MARK: Splash
+"Splash.Preloader1" = "Checking your account...";
+"Splash.Preloader2" = "Syncing the yoga library";
+"Splash.Preloader3" = "Setting up your account...";
+
+// MARK: Paygate
+"Paygate.Title" = "UNLOCK PREMIUM STATUS";
+"Paygate.Cell1" = "Customized yoga workouts";
+"Paygate.Cell2" = "Clear instructions";
+"Paygate.Cell3" = "Easily schedule your training";
+"Paygate.Info" = "Secured by the App Store. Cancel anytime.";
+"Paygate.TermsOfUse" = "Terms of Use";
+"Paygate.PrivacyPolicy" = "Privacy Policy";
+"Paygate.RestorePurchases" = "Restore Purchase";
+"Paygate.Failed" = "Failed to make purchase";
+"Paygate.Monthly.Name1" = "7 days for free";
+"Paygate.Monthly.Name2" = "Quick prep";
+"Paygate.Monthly.Bottom1" = "After 7-day trial";
+"Paygate.Monthly.Bottom2" = "Trial is over";
+"Paygate.Lifetime.Name" = "Lifetime";
+"Paygate.Lifetime.PriceDescription" = "\nIn terms of  1  year";
+"Paygate.Lifetime.BottomDescription" = "once";
+"Paygate.Discount" = "SAVE %i%%";
+"Paygate.Price.Period" = "month";
+
+// MARK: Onboarding
+"Onboarding.Welcome.Title" = "WELCOME TO\nYOGA";
+"Onboarding.Welcome.Button" = "Start now";
+"Onboarding.Gender.Title" = "What is your gender?";
+"Onboarding.Gender.Male" = "Male";
+"Onboarding.Gender.Female" = "Female";
+"Onboarding.Age.Title" = "What is your age?";
+"Onboarding.Age.1" = "18-24";
+"Onboarding.Age.2" = "25-34";
+"Onboarding.Age.3" = "35-44";
+"Onboarding.Age.4" = "45-60";
+"Onboarding.Age.5" = "60+";
+"Onboarding.SkillLevel.Title" = "Define your skill level";
+"Onboarding.DaysOfWeek.Title" = "Choose training days";
+"Onboarding.DaysOfWeek.Su" = "Su";
+"Onboarding.DaysOfWeek.Mo" = "Mo";
+"Onboarding.DaysOfWeek.Tu" = "Tu";
+"Onboarding.DaysOfWeek.We" = "We";
+"Onboarding.DaysOfWeek.Th" = "Th";
+"Onboarding.DaysOfWeek.Fr" = "Fr";
+"Onboarding.DaysOfWeek.Sa" = "Sa";
+"Onboarding.Drills.Title" = "Choose your goals";
+"Onboarding.FocusZone.Title" = "Which body part would\nyou like to improve?";
+"Onboarding.FocusZone.Arms" = "Arms";
+"Onboarding.FocusZone.Chest" = "Chest";
+"Onboarding.FocusZone.Core" = "Core";
+"Onboarding.FocusZone.Glutes" = "Glutes";
+"Onboarding.FocusZone.Legs" = "Legs";
+"Onboarding.Preloader.Text1" = "Analyzing your preferences...";
+"Onboarding.Preloader.Text2" = "Identifying your skill level...";
+"Onboarding.Preloader.Text3" = "Creating personalized\nworkouts...";
+"Onboarding.Preloader.Text4" = "Setting up training program...";
+
+// MARK: Main
+"Main.Home" = "Home";
+"Main.Train" = "Train";
+"Main.Profile" = "Profile";
+
+// MARK: Home
+"Home.DailyPicks" = "Daily picks";
+"Home.SeeAll" = "See all";
+"Home.TryDrills" = "Try exercises";
+"Home.ImproveYourFitness" = "Select by goals";
+"Home.StartTraining" = "Start training";
+"Home.YourScore" = "Your score";
+"Home.Level" = "Level - %@";
+"Home.Schedule" = "Schedule • %@";
+"Home.NoTrainings" = "No trainings for today";
+"Home.AddTraining" = "Add a training";
+"Home.Completed" = "Completed";
+"Home.ExercisesCount" = "%i exercises";
+
+// MARK: DrillTrainingInstruction
+"DrillTrainingInstruction.StartTraining" = "Start training";
+"DrillTrainingInstruction.Instruction" = "Instruction";
+
+// MARK: DrillTraining
+"DrillTraining.Go" = "GO";
+"DrillTraining.FinishTraining" = "Finish training";
+"DrillTraining.Instruction" = "Instruction";
+"DrillTraining.Paused" = "PAUSED";
+
+// MARK: WorkoutTraining
+"WorkoutTraining.Go" = "GO";
+"WorkoutTraining.FinishWorkout" = "Finish workout";
+"WorkoutTraining.Instruction" = "Instruction";
+"WorkoutTraining.Paused" = "PAUSED";
+"WorkoutTraining.Next" = "NEXT";
+
+// MARK: WorkoutTrainingQuit
+"WorkoutTrainingQuit.Title" = "Are you sure?";
+"WorkoutTrainingQuit.SubTitle" = "Do you really want to end the training?";
+"WorkoutTrainingQuit.Continue" = "Continue training";
+"WorkoutTrainingQuit.Finish" = "Finish training";
+
+// MARK: WorkoutTrainingResult
+"WorkoutTrainingResult.Title" = "Train completed";
+"WorkoutTrainingResult.Duration" = "Duration:";
+"WorkoutTrainingResult.ExercisesCount" = "%i exercises";
+
+// MARK: DrillTrainingResult
+"DrillTrainingResult.Title" = "Train completed";
+"DrillTrainingResult.Duration" = "Duration:";
+
+// MARK: DrillTrainingQuit
+"DrillTrainingQuit.Title" = "Are you sure?";
+"DrillTrainingQuit.SubTitle" = "Do you really want to end the training?";
+"DrillTrainingQuit.Continue" = "Continue training";
+"DrillTrainingQuit.Finish" = "Finish training";
+
+// MARK: Train
+"Train.SeeAll" = "See all";
+"Train.Workouts" = "Wall Pilates Workouts";
+"Train.FocusZones" = "Focus Zones";
+"Train.Steps" = "Select by goals";
+"Train.ExercisesCount" = "%i exercises";
+
+// MARK: TrainInfo
+"TrainInfo.Title" = "Info";
+"TrainInfo.SubTitle" = "To change the level of difficulty please go to the settings";
+
+// MARK: WorkoutTemplate
+"WorkoutTemplate.StartWorkout" = "Start training";
+"WorkoutTemplate.FocusZones" = "Focus Zones";
+"WorkoutTemplate.ExercisesCount" = "%i exercises";
+
+// MARK: ExerciseInstruction
+"ExerciseInstruction.Title" = "Instruction";
+
+// MARK: Calendar
+"Calendar.Add" = "Add to schedule";
+"Calendar.Scheduled" = "Scheduled";
+"Calendar.Completed" = "Completed";
+"Calendar.Unfinished" = "Unfinished";
+"Calendar.SelectDate" = "Select Date";
+
+// MARK: Profile
+"Profile.MyProfile" = "My profile";
+"Profile.DaysOfWeek.Su" = "S";
+"Profile.DaysOfWeek.Mo" = "M";
+"Profile.DaysOfWeek.Tu" = "T";
+"Profile.DaysOfWeek.We" = "W";
+"Profile.DaysOfWeek.Th" = "T";
+"Profile.DaysOfWeek.Fr" = "F";
+"Profile.DaysOfWeek.Sa" = "S";
+"Profile.Level" = "%@ Level";
+"Profile.StatsTitle" = "Personal stats";
+"Profile.StatsDescription.Min" = "min of completed training";
+"Profile.StatsDescription.Hour" = "hour of completed training";
+"Profile.StatsDescription.Hours" = "hours of completed training";
+"Profile.SkillLevel" = "Skill level";
+"Profile.TrainingDays" = "Training days";
+"Profile.FocusZones" = "Focus zones";
+"Profile.Goals" = "Goals";
+"Profile.TermsofUse" = "Terms of Use";
+"Profile.PrivacyPolicy" = "Privacy Policy";
+"Profile.ContactUs" = "Contact Us";
+"Profile.Legal&Privacy" = "Legal & Privacy";
