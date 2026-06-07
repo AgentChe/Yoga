@@ -45,9 +45,6 @@ final class OPreloaderView: OSlideView {
     override func moveToThis() {
         super.moveToThis()
         
-        AmplitudeManager.shared
-            .logEvent(name: "Loading Screen")
-        
         calculatePercent()
         request()
         

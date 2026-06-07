@@ -35,9 +35,6 @@ final class TrainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AmplitudeManager.shared
-            .logEvent(name: "Train Screen")
-        
         mainView.infoButton.rx.tap
             .bind(to: Binder(self) { base, void in
                 base.didTapInfo()

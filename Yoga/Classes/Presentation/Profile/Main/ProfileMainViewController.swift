@@ -22,9 +22,6 @@ class ProfileMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AmplitudeManager.shared
-            .logEvent(name: "Profile Screen")
-        
         viewModel.tryAgain = { [weak self] error -> Observable<Void> in
             guard let self = self else {
                 return .never()
@@ -71,9 +68,6 @@ private extension ProfileMainViewController {
     func route(_ route: ProfileMainViewModel.Route) {
         switch route {
         case .details:
-            AmplitudeManager.shared
-                .logEvent(name: "Profile Tap", parameters: ["what": "my profile"])
-            
             let vc = ProfileDetailsViewController.make()
             navigationController?.pushViewController(vc, animated: true)
         case .drill(let drill):

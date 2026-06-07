@@ -24,9 +24,6 @@ final class PaygateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AmplitudeManager.shared
-            .logEvent(name: "Paygate Screen", parameters: [:])
-        
         viewModel.products
             .drive(Binder(self) { base, products in
                 base.mainView.leftOptionButton.info = products.first

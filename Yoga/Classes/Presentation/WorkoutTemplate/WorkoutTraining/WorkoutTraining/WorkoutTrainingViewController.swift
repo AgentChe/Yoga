@@ -40,9 +40,6 @@ class WorkoutTrainingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AmplitudeManager.shared
-            .logEvent(name: "Timer Screen")
-        
         viewModel.tryAgain = { [weak self] error -> Observable<Void> in
             guard let self = self else {
                 return .never()
@@ -54,17 +51,9 @@ class WorkoutTrainingViewController: UIViewController {
         Observable
             .merge(
                 mainView.closeButton.rx.tap
-                    .asObservable()
-                    .do(onNext: {
-                        AmplitudeManager.shared
-                            .logEvent(name: "Timer Tap", parameters: ["what": "exit"])
-                    }),
+                    .asObservable(),
                 mainView.menuView.finishButton.rx.tap
                     .asObservable()
-                    .do(onNext: {
-                        AmplitudeManager.shared
-                            .logEvent(name: "Timer Tap", parameters: ["what": "finish"])
-                    })
             )
             .withLatestFrom(viewModel.currentAndNextExercise)
             .bind(to: Binder(self) { base, tuple in
@@ -76,19 +65,11 @@ class WorkoutTrainingViewController: UIViewController {
             .asObservable()
             .mapToVoid()
             .asSignal(onErrorSignalWith: .never())
-            .do(onNext: {
-                AmplitudeManager.shared
-                    .logEvent(name: "Timer Tap", parameters: ["what": "next"])
-            })
             .emit(to: viewModel.didTapNext)
             .disposed(by: disposeBag)
         
         mainView.menuView.previosButton.rx.tap
             .asSignal()
-            .do(onNext: {
-                AmplitudeManager.shared
-                    .logEvent(name: "Timer Tap", parameters: ["what": "back"])
-            })
             .emit(to: viewModel.didTapPrevios)
             .disposed(by: disposeBag)
         
@@ -177,14 +158,8 @@ class WorkoutTrainingViewController: UIViewController {
             .bind(to: Binder(self) { base, void in
                 switch base.mainView.menuView.playPauseButton.stateCode {
                 case .pause:
-                    AmplitudeManager.shared
-                        .logEvent(name: "Timer Tap", parameters: ["what": "play"])
-                    
                     base.lifeCyrcle.continueTraining()
                 case .play:
-                    AmplitudeManager.shared
-                        .logEvent(name: "Timer Tap", parameters: ["what": "pause"])
-                    
                     base.lifeCyrcle.pauseTraining()
                 }
             })
@@ -321,9 +296,6 @@ private extension WorkoutTrainingViewController {
     }
     
     func openInstruction() {
-        AmplitudeManager.shared
-            .logEvent(name: "Timer Tap", parameters: ["what": "instruction"])
-        
         mainView.menu(hidden: true) { [weak self] in
             self?.mainView.instruction(hidden: false) {
                 self?.lifeCyrcle.pauseTraining()

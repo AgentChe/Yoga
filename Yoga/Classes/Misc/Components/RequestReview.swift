@@ -15,9 +15,6 @@ final class RequestReview {
             return
         }
 
-        AmplitudeManager.shared
-            .logEvent(name: "Rating Request")
-
         DispatchQueue.main.async {
             SKStoreReviewController.requestReview(in: scene)
         }

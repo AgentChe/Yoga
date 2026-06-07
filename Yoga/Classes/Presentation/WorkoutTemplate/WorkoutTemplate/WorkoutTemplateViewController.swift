@@ -58,9 +58,6 @@ final class WorkoutTemplateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AmplitudeManager.shared
-            .logEvent(name: "Workout Screen")
-        
         viewModel.tryAgain = { [weak self] error -> Observable<Void> in
             guard let self = self else {
                 return .never()
@@ -155,14 +152,8 @@ private extension WorkoutTemplateViewController {
     func route(_ route: WorkoutTemplateViewModel.Route) {
         switch route {
         case .training(let customerWorkoutId):
-            AmplitudeManager.shared
-                .logEvent(name: "Workout Tap", parameters: ["what": "start"])
-            
             workoutTrainingAssembly.startTraining(from: self, customerWorkoutId: customerWorkoutId)
         case .calendar(let customerWorkoutId):
-            AmplitudeManager.shared
-                .logEvent(name: "Workout Tap", parameters: ["what": "schedule"])
-            
             let calendar = CalendarViewController.make(schedulerType: .workout(customerWorkoutId: customerWorkoutId))
             present(calendar, animated: true)
         }
