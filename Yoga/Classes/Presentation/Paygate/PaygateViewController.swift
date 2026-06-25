@@ -55,7 +55,7 @@ final class PaygateViewController: UIViewController {
             .buyed
             .emit(onNext: { [weak self] success in
                 if !success {
-                    Toast.notify(with: "Paygate.Failed".localized, style: .danger)
+                    self?.showError()
                     return
                 }
                 
@@ -67,7 +67,7 @@ final class PaygateViewController: UIViewController {
             .restored
             .emit(onNext: { [weak self] result in
                 if !result {
-                    Toast.notify(with: "Paygate.Failed".localized, style: .danger)
+                    self?.showError()
                     return
                 }
                 
@@ -115,6 +115,14 @@ extension PaygateViewController {
 
 // MARK: Private
 private extension PaygateViewController {
+    func showError() {
+        let alert = UIAlertController(title: nil,
+                                      message: "Paygate.Failed".localized,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+    
     func dismiss(with result: PaygateViewControllerResult) {
         dismiss(animated: true) { [weak self] in
             guard let self = self else {

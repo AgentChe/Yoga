@@ -229,7 +229,6 @@
 		DEF1EF192CE4D68B004574D7 /* HomeWorkoutsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1ED0C2CE4D68B004574D7 /* HomeWorkoutsCollectionCell.swift */; };
 		DEF1EF1A2CE4D68B004574D7 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1ECBF2CE4D68B004574D7 /* Fonts.swift */; };
 		DEF1EF1B2CE4D68B004574D7 /* WorkoutTemplateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1EDAD2CE4D68B004574D7 /* WorkoutTemplateViewModel.swift */; };
-		DEF1EF1C2CE4D68B004574D7 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1EC9A2CE4D68B004574D7 /* Toast.swift */; };
 		DEF1EF1D2CE4D68B004574D7 /* PlanDrill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1EDF82CE4D68B004574D7 /* PlanDrill.swift */; };
 		DEF1EF1E2CE4D68B004574D7 /* GetPlanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1EDFD2CE4D68B004574D7 /* GetPlanRequest.swift */; };
 		DEF1EF1F2CE4D68B004574D7 /* CalendarMonthHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF1ECD02CE4D68B004574D7 /* CalendarMonthHeader.swift */; };
@@ -349,7 +348,6 @@
 		DEF1EC972CE4D68B004574D7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DEF1EC982CE4D68B004574D7 /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DEF1EC992CE4D68B004574D7 /* RxActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxActivityIndicator.swift; sourceTree = "<group>"; };
-		DEF1EC9A2CE4D68B004574D7 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		DEF1EC9C2CE4D68B004574D7 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		DEF1EC9D2CE4D68B004574D7 /* NavigationControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerSettings.swift; sourceTree = "<group>"; };
 		DEF1EC9F2CE4D68B004574D7 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
@@ -765,7 +763,6 @@
 				DEF1EC972CE4D68B004574D7 /* ImagePicker.swift */,
 				DEF1EC982CE4D68B004574D7 /* RequestReview.swift */,
 				DEF1EC992CE4D68B004574D7 /* RxActivityIndicator.swift */,
-				DEF1EC9A2CE4D68B004574D7 /* Toast.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -2470,7 +2467,6 @@
 				DEF1EF192CE4D68B004574D7 /* HomeWorkoutsCollectionCell.swift in Sources */,
 				DEF1EF1A2CE4D68B004574D7 /* Fonts.swift in Sources */,
 				DEF1EF1B2CE4D68B004574D7 /* WorkoutTemplateViewModel.swift in Sources */,
-				DEF1EF1C2CE4D68B004574D7 /* Toast.swift in Sources */,
 				DEF1EF1D2CE4D68B004574D7 /* PlanDrill.swift in Sources */,
 				DEF1EF1E2CE4D68B004574D7 /* GetPlanRequest.swift in Sources */,
 				DEF1EF1F2CE4D68B004574D7 /* CalendarMonthHeader.swift in Sources */,
@@ -2598,7 +2594,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Z2WD4P9PA4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2613,7 +2609,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = train.yoga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2636,7 +2632,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Z2WD4P9PA4;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2651,7 +2647,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = train.yoga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
